@@ -1,0 +1,400 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                url("https://i.pinimg.com/originals/f3/61/40/f36140b3967c31155e8725b5163df2d5.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+  }
+  
+  
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+   
+  .travel-quote {
+    text-align: center;
+    font-size: 2.2em; /* Bigger quote */
+    font-weight: bold;
+    color: white; /* White color */
+    font-style: italic;
+    margin: 40px 0; /* Adds space above and below */
+    padding: 20px 0; /* Extra spacing */
+  }
+  
+  /* Main container */
+  .travel-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increased spacing between cards */
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Travel Card Styling */
+  .travel-card {
+    width: 320px; /* Vertical rectangle */
+    height: 500px; /* Taller cards */
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensures content aligns properly */
+    margin: 35px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  }
+  .travel-card:hover {
+    transform: translateY(-10px); /* Moves card up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Increases shadow */
+  }
+  /* Image Styling */
+  .travel-card img {
+    width: 100%; /* Full width */
+    height: 250px; /* Fixed height for uniformity */
+    object-fit: cover; /* Prevents distortion */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Travel details section */
+  .travel-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  /* Title Styling */
+  .travel-details h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph & Price */
+  .travel-details p {
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+  
+  /* Button Styling */
+  .book-button {
+    margin-top: auto; /* Pushes button to bottom */
+    padding: 10px 15px;
+    background: #ff5a3c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background: #e0482f;
+  }
+  
+  
+  header h1 {
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 200%;
+    text-shadow: 0px 0px 5px black;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  header h2 {
+    margin: 0;
+    line-height: 1.2;
+    color: white;
+    padding-left: 20px;
+    font-size: 1.2em;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    background-color: rgba(8, 8, 8, 0.399);
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: larger;
+  }
+  nav i{
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  .search {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  input[type="text"] {
+    height: 30px; 
+    width: 700px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.763);
+    border: 1px solid black;
+    padding-left: 10px;
+    font-size: medium;
+  }
+  
+  input::placeholder {
+    color: black;
+    font-size: medium;
+  }
+  
+  /* Button styles */
+  button {
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.763);
+    font-style: italic;
+    font-size: medium;
+    cursor: pointer;
+    animation: pop 1.5s ease-in-out infinite;
+  }
+  @keyframes pop{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+  }
+  header h1 b {
+    margin-right: auto; 
+  }
+  
+  div img{
+    margin-top: 30px ;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  div h1 {
+    font-size: 4em; 
+    color: #ffffff; 
+    text-align: center;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: wave 1.5s ease-in-out infinite; 
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-15px); 
+    }
+    40% {
+        transform: translateY(10px); 
+    }
+    60% {
+        transform: translateY(-10px); 
+    }
+    80% {
+        transform: translateY(5px); 
+    }
+  }
+    nav div p button {
+    width: 400px;
+    height: 100px;
+    background-color:rgba(255, 255, 255, 0.722);
+    margin-left:0px;
+   }
+  
+  p{
+    font-size: xx-large;
+    color: antiquewhite;
+    margin-left: 50px;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .row img {
+    border-radius: 8px;
+  }
+  h1{
+    font-size: 3em; 
+    text-align: center;
+    justify-content: center;
+    
+  }
+  div p{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  div a{
+    margin-bottom: 20px;
+  }
+  .container {
+    display: flex;
+    flex-wrap:wrap;
+    align-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+  }
+  
+  .destination {
+    display: flex;
+    align-items: center;
+    width: calc(33.33% - 13.33px);
+    padding: 10px;
+    background-color: rgba(231, 219, 219, 0.619);
+    border-radius: 8px;
+    margin-bottom: 20px; 
+    box-shadow: 0 1px 3px rgba(35, 35, 35, 0.707);
+    box-sizing: border-box;
+  }
+  
+  .destination img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    margin-right: 10px;
+  }
+  
+  .destination h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .destination p {
+    margin: 5px;
+    font-size: 0.9em;
+    color: black;
+  }
+  .destinations-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the cards */
+    align-items: stretch; /* Ensures equal height */
+    padding: 20px;
+  }
+  
+  .destination-card {
+    width: 400px;
+    background: rgba(195, 182, 182, 0.663);
+    text-align: center;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Ensures the content stacks */
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(200, 193, 193, 0.389);
+  }
+  
+  .destination-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 50px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid white;
+    opacity: 0.95; /* Slight transparency */
+    transition: opacity 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .destination-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .destination-card p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.689);
+    margin: 10px;
+  }
+  
+  .destination-card:hover {
+    transform: scale(1.05);
+  }
+  .destination-card img:hover {
+    opacity: 1; /* Full brightness on hover */
+  }
+  .container1 {
+    margin: 20px auto;
+    background: #ffffff94;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+   h2 {
+    color: #000000;
+    font-size: small;
+  }
+  p {
+    color: #000000;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #000000;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #4cae4c;
+  }
